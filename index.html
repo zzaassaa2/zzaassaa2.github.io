@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TODO</title>
+    <title>George Zorn Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
-    Hello World
+
+<div class="container-fluid">
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html">Text</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrime">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">R</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Profile -->
+    <div style="margin: 60px 10px 0 10px">
+        <div class="row">
+            <div class="col">
+                <div class="row card border-primary mb-3">
+                    <div class="card-header">Work Experience/Education</div>
+                    <div class="card-body">
+                        <p class="card-text">VCU/UToronto/RedLobster</p>
+                    </div>
+                </div>
+                <div class="row card border-primary mb-3">
+                    <div class="card-header">Skills</div>
+                    <div class="card-body">
+                        <h5 class="card-title">C++</h5>
+                        <p class="card-text">projects</p>
+                        <h5 class="card-title">Python</h5>
+                        <p class="card-text">projects</p>
+                        <h5 class="card-title">R</h5>
+                        <p class="card-text">projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="row card border-primary mb-3" style="margin-left: 5px">
+                    <div class="card-header text-center">George Zorn</div>
+                    <div class="card-body">
+                        <img class="img-fluid" src="images/Spartan_apple.jpg" alt="Picture of George Zorn"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code demonstration area -->
+    <div class="row">
+        <div class="col-6">
+            <!-- R -->
+            <a href="html/uniprotProteinView.html">
+                <img class="img-fluid image_hover" src="images/r_uniprotproteinview.png" alt="R package image" style="height:100%"/>
+                <div class="show_on_hover">
+                    uniprotProteinView (R Package with Python Port)
+                </div>
+            </a>
+        </div>
+        <div class="col-6">
+            <!-- C++ -->
+            <a href="html/mazeRunner.html">
+                <img class="img-fluid image_hover" src="images/cpp_mazerunner.png" alt="Picture of George Zorn"/>
+                <div class="show_on_hover">
+                    MazeRunner
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <!-- Python -->
+            <a href="html/bioTestView.html">
+                <img class="img-fluid image_hover" src="images/python_bioview.png" alt="Picture of George Zorn"/>
+                <div class="show_on_hover">
+                    BioTestView
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

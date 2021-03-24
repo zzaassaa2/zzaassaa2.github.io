@@ -1,0 +1,28 @@
+/*body{*/
+/*    background-image: url("../images/Spartan_apple.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+
+/*body{*/
+/*    background: red;*/
+/*}*/
+
+.image_hover:hover{
+    filter: brightness(50%);
+}
+.image_hover:hover + .show_on_hover{
+    display: block;
+}
+
+.show_on_hover{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+

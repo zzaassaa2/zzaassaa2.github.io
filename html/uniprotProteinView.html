@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uniprot Protein View</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("../images/r_uniprotproteinview.png")
+        }
+        .info{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">Text</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrime">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">R</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron" style="margin: 80px 80px 20px 80px">
+        <h1 class="display-3">
+            Uniprot Protein View
+        </h1>
+        <p class="lead">A R package that allows drawing of data from the UniProt API.</p>
+        <hr class="my-4">
+        <p>The goal of uniprotProteinView is to provide a means to show a graphical representation of the UniProt data as well as allow easy cross-comparison of features between different proteins for easy analysis of protein features.</p>
+        <p>There are two version available, the primary version is an R-package, while the second one is a python port.</p>
+
+        <hr class="my-2">
+        <h3>Examples</h3>
+        <div class="row">
+            <div class="col-6">
+                <p class="info">uniprotProteinView::drawProtein("Q04206")</p>
+                <img class="img-fluid image_hover" src="../images/r_example_first.png" alt="Simple Example One"/>
+            </div>
+            <div class="col-6">
+                <p class="info">uniprotProteinView::drawProtein(proteins = list(type = c("Q04206", "Q9D270"), colors = c("green", "green")), types = list(type = c("domain", "region of interest"), colors = c("red", "purple")), descriptionSearch = list(type = "phos", colors = "blue"), offSetFeatures = list(type = c("strand", "helix", "turn"), colors = c("green", "orange", "purple")) )</p>
+                <img class="img-fluid image_hover" src="../images/r_example_second.png" alt="Simple Example Two"/>
+            </div>
+        </div>
+
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://github.com/zzaassaa2/uniprotProteinView" role="button">Source Code (R)</a>
+            <a class="btn btn-primary btn-lg" href="https://github.com/zzaassaa2/uniprotProteinViewCharm" role="button">Source Code (Python)</a>
+        </p>
+    </div>
+</body>
+</html>

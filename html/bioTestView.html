@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BioTestView</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <style>
+        body{
+            background-image: url("../images/python_bioview.png")
+        }
+        .info{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="../index.html">Text</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarPrime">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Python</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">C++</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">R</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="jumbotron" style="margin: 80px 80px 20px 80px">
+        <h1 class="display-3">
+            BioTestView
+        </h1>
+        <p class="lead">A simple python tkinter application, with a slight focus on biology.</p>
+        <hr class="my-4">
+        <p>This python project consists of 6 different modules. Each module preforms a specific task, demonstrated within the name.</p>
+
+        <hr class="my-2">
+        <h3>DNA to Protein Sequence</h3>
+        <p class="info">This module accepts an input of DNA nucleotides, and converts the string into the corresponding amino acid sequence that it represents. The default button, will set the contents of the box to a predefined DNA sequence.</p>
+
+        <hr class="my-2">
+        <h3>Molecular Mass Estimator</h3>
+        <p class="info">This module accepts a string of either nucleotides or amino acids. The specific input type of DNA, RNA, or protein can be set. The module will then attempt to convert the string into the total mass, from the corresponding input type. This module also provides 3 default inputs, one for DNA, one for RNA, and one for protein.</p>
+
+        <hr class="my-2">
+        <h3>GC Content Plot</h3>
+        <p class="info">This module accepts a string of nucleotides, then plots the relative density of GC within the region.</p>
+
+        <hr class="my-2">
+        <h3>Image Editor</h3>
+        <p class="info">This module accepts a string representing the relative path to the image. The image can then have the color values altered, or the image set to greyscale.</p>
+
+        <hr class="my-2">
+        <h3>Sequence Alignment</h3>
+        <p class="info">This module accepts two different strings, one in each input box. The user then defines whether the sequences should be compared as DNA, or protein sequences. There are two different comparison options provided, to compare either by similarity or by alignment. Alignment will take into account the distance between regions of similarity.</p>
+
+        <hr class="my-2">
+        <h3>Signal</h3>
+        <p class="info">This module accepts parameters, an amplitude, frequency, and decay value, that is used to generate a graph showing the signal. The user can input multiple parameters, to stack multiple signal together. The is also the option to show a fourier transform of the data; showing the real component, imaginary, or the magnitude.</p>
+
+        <hr class="my-4">
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://github.com/zzaassaa2/BioTestView" role="button">Source Code</a>
+        </p>
+    </div>
+</body>
+</html>
